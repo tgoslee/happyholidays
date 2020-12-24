@@ -18,17 +18,17 @@
             },
             settings		= $.extend({}, defaults, settings),
             targetHeight 	= settings.target.outerHeight(),
-            targetWidth		= settings.target.outerWidth(),
-            $element 		= $('<div class="flake" />').css({'position': 'absolute', 'top': '-50px',width:'100%'}).html('')
+            targetWidth		= settings.target.innerWidth(),
+            $element 		= $('<div class="flake" />').css({'position': 'absolute', 'top': '-50px'}).html('')
         ;
 
 
         return setInterval( function(){
-            var startPosX 		= Math.random() * targetWidth - 100,
+            var startPosX 		= Math.random() * targetWidth ,
                 opacity			= 0.5 + Math.random(),
                 sizeFlake		= settings.minSize + Math.random() * settings.maxSize,
-                startPosY		= targetHeight - 20,
-                endPosX			= startPosX  + Math.random() * 300,
+                startPosY		= targetHeight,
+                endPosX			= startPosX  + Math.random() * 800,
                 fallTime		= targetHeight * settings.fallTimeMultiplier + Math.random() * settings.fallTimeDifference,
                 currentElement 	= settings.elements[Math.floor(Math.random()*settings.elements.length)];
 

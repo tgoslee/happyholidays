@@ -17,7 +17,7 @@ h1 {
     font-family: 'Arizonia', cursive;
     font-size: 50px;
     letter-spacing: 2px;
-    /*text-shadow: #F0BA03 1px 0 10px;*/
+    text-shadow: #F0BA03 1px 0 10px;
 }
 
 #tree{
