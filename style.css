@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 html,body{
     padding: 0;
     margin: 0;
@@ -7,7 +6,7 @@ html,body{
 }
 .container {
     background-color: black;
-    width: 600px;
+    width: 100%;
     height: 950px;
     margin-top: 230px;
 }
@@ -15,25 +14,23 @@ h1 {
     margin:5px auto 50px auto;
     color:#ffffff;
     text-align:center;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 30px;
+    font-family: 'Arizonia', cursive;
+    font-size: 50px;
     letter-spacing: 2px;
-    text-shadow: #F0BA03 1px 0 10px;
+    /*text-shadow: #F0BA03 1px 0 10px;*/
 }
 
 #tree{
     position:relative;
-    width: 200px;
+    width: 100%;
     height: 250px;
-    padding: 0% 55%;
-    margin-bottom:-30px;
     z-index: 1;
 }
 
 .snow {
     position: relative;
     float: inherit;
-    width: 870px;
+    width: 100%;
     height: 240px;
     z-index: 1;
     background-color:black;
